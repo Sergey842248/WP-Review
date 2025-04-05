@@ -385,7 +385,7 @@ function review_admin() {
 }
 
 function review_admin_scripts() {
-    wp_enqueue_script( 'review-admin', plugin_dir_url( __FILE__ ) . 'js/review-admin.js', array( 'jquery' ), '1.0.0', true );
+    wp_enqueue_script( 'review-admin', plugin_dir_url( __FILE__ ) . 'review-admin.js', array( 'jquery' ), '1.0.0', true );
 }
 add_action( 'admin_enqueue_scripts', 'review_admin_scripts' );
 
